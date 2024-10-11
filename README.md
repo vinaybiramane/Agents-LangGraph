@@ -1,43 +1,76 @@
-# LLM Agent from Scratch
+# Viral Instagram Caption Generator
 
-This project demonstrates how to build a Language Model (LLM) agent from scratch using Python. The agent is designed to perform various tasks, including querying Wikipedia and potentially other functionalities.
+This project demonstrates the creation of advanced AI agents using LangChain and LangGraph to generate viral Instagram post captions. It showcases three different approaches, each building upon the previous one:
 
-## Features
+1. LangChain Agent from Scratch
+2. Reflection Agent for Writing Viral Instagram Captions
+3. Reflexion Agent with Additional Tools (Tavily Search)
 
-- Custom LLM agent implementation
-- Wikipedia querying capability
+## 1. LangChain Agent from Scratch
 
-## Requirements
+This section demonstrates how to build a basic LangChain agent that generates Instagram captions.
 
-- Python 3.x
-- Jupyter Notebook
-- httpx
+Key components:
+- Azure OpenAI integration
+- Custom prompt templates
+- Basic chain structure
 
-## Installation
+## 2. Reflection Agent for Writing Viral Instagram Captions
 
-1. Clone this repository:
+Building upon the basic agent, this section introduces a reflection mechanism to improve caption quality.
+
+Key features:
+- Self-critique and reflection
+- Iterative improvement process
+- Pydantic models for structured output
+
+## 3. Reflexion Agent with Additional Tools (Tavily Search)
+
+The final evolution of the agent incorporates external tools and a more complex workflow.
+
+Highlights:
+- Integration with Tavily Search API for real-time information
+- LangGraph for managing complex agent workflows
+- Multiple iterations of research and refinement
+
+## Setup and Usage
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Agents-LangGraph.git
-   cd Agents-LangGraph
+   git clone https://github.com/your-username/viral-instagram-caption-generator.git
+   cd viral-instagram-caption-generator
    ```
 
+2. Install dependencies:
 
-## Usage
 
-1. Open the Jupyter notebook:
+3. Set up environment variables:
+   Create a `.env` file with your API keys:
+   ```bash
+   AZURE_OPENAI_API_KEY=your_azure_openai_api_key
+   AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
+   TAVILY_API_KEY=your_tavily_api_key
+   ```
 
-2. Run the cells in the notebook to see the agent in action.
+4. Run the Jupyter notebook:
+
+
+5. Follow the notebook cells to generate viral Instagram captions using different agent configurations.
 
 ## Project Structure
 
-- `agent_from_scratch_python.ipynb`: Main Jupyter notebook containing the LLM agent implementation
-- [List other important files/directories]
+- `reflexion_agent.ipynb`: Main Jupyter notebook containing all agent implementations
+- `requirements.txt`: List of Python dependencies
+- `.env`: Environment variables (not tracked in git)
 
-## Key Components
+## Dependencies
 
-1. Wikipedia Query Function:
-   The project includes a function to query Wikipedia using the Wikipedia API.
-
+- langchain
+- langgraph
+- azure-openai
+- tavily-python
+- pydantic
+- jupyter
 
 ## Contributing
 
